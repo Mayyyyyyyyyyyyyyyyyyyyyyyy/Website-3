@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <title>Admin - Contact Messages</title>
+  <style>
+    
+    .actions {
+        display: flex;
+        gap: 8px;
+    }
+
+    .actions button {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 12px;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .reply {
+        background-color: #198754; /* Bootstrap green */
+        color: white;
+    }
+
+    .reply:hover {
+        background-color: #157347;
+    }
+
+    .delete {
+        background-color: #dc3545; /* Bootstrap red */
+        color: white;
+    }
+
+    .delete:hover {
+         background-color: #bb2d3b;
+    }
+
+  </style>
+    </head>
+        <body>
+
+  <aside class="sidebar">
+    <h2>Admin Panel</h2>
+    <nav>
+      <a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+      <a href="users.html"><i class="fas fa-user"></i> Users</a>
+      <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+      <a href="Pofile.html"><i class="fas fa-id-badge"></i> Profile</a>
+      <a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a>
+      <a href="#" onclick="outMessage()"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+    </nav>
+    </aside>
+
+  <div class="main-content">
+    <header>
+      <h1>Contact Messages</h1>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Subject</th>
+          <th>Message</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Juan Dela Cruz</td>
+          <td>juan@example.com</td>
+          <td>Login Issue</td>
+          <td>I'm having trouble logging into my account.</td>
+          <td class="actions">
+         <button class="reply"><i class="fas fa-reply"></i> Reply</button>
+         <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+    </td>
+
+        </tr>
+        <tr>
+            <td>Jazel Mae Cruz</td>
+        <td>jazelmae@example.com</td>
+        <td>Booking issues</td>
+        <td>Im having a hard time to find a good place to stay.</td >
+           <td class="actions">
+            <button class="reply"><i class="fas fa-reply"></i> Reply</button>
+             <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+    </td>
+
+    </tr>
+    <tr>
+        <td>Jazz Mae Gonzales</td>
+        <td>jazzmae@example.com</td>
+        <td> design issues</td>
+        <td>Im having a hard time to find a good place to stay.</td >
+           <td class="actions">
+            <button class="reply"><i class="fas fa-reply"></i> Reply</button>
+            <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+    </td>
+
+    </tr>
+    <tr>
+        <td>Alexa Marie Rodrigez</td>
+        <td>alexamarie@example.com</td>
+        <td> design issues</td>
+        <td>Im having a hard time to find a good place to stay.</td >
+           <td class="actions">
+            <button class="reply"><i class="fas fa-reply"></i> Reply</button>
+            <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+    </td>
+
+    </tr>
+    <tr>
+        <td>Ellie Rodrigez</td>
+        <td>Ellie@example.com</td>
+        <td> design issues</td>
+        <td>Im having a hard time to find a good place to stay.</td >
+           <td class="actions">
+            <button class="reply"><i class="fas fa-reply"></i> Reply</button>
+            <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+    </td>
+
+    </tr>
+    <tr>
+          <td>James Cruz</td>
+          <td>james@example.com</td>
+          <td>Login Issue</td>
+          <td>I'm having trouble logging into my account.</td>
+          <td class="actions">
+         <button class="reply"><i class="fas fa-reply"></i> Reply</button>
+         <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+    </td>
+    <tr>
+          <td>Ariean May Rosales</td>
+          <td>arieanmay@example.com</td>
+          <td>Login Issue</td>
+          <td>I'm having trouble logging into my account.</td>
+          <td class="actions">
+         <button class="reply"><i class="fas fa-reply"></i> Reply</button>
+         <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+    </td>
+
+      </tbody>
+    </table>
+    <footer>
+        &copy; 2025 MyWebsite. All rights reserved.
+      </footer>
+  </div>
+  <script>
+    function outMessage(){
+      if(confirm("Are you sure you want to log out?")){
+        alert("Log Out successfull!")
+        window.location.href="Login.html"
+      }
+    }
+  </script>
+
+</body>
+</html>

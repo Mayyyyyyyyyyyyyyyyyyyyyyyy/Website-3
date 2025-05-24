@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Admin Panel</h2>
+      <nav>
+        <a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="users.html"><i class="fas fa-user"></i> Users</a>
+        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+        <a href="Pofile.html"><i class="fas fa-id-badge"></i> Profile</a>
+        <a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a>
+        <a href="#" onclick="outMessage()"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="profile-form">
+        <h2> Profile</h2>
+        <form action="#" method="post">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" value="Juan Dela Cruz">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value="juan@example.com">
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" value="juandelacruz">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter Password">
+
+          <div class="form-buttons">
+            <button type="submit" class="save-btn" onclick="showMessage()">Save</button>
+            <button type="reset" class="cancel-btn">Cancel</button>
+          </div>
+        </form>
+      </div>
+       <footer>
+        &copy; 2025 MyWebsite. All rights reserved.
+      </footer>
+    </main>
+  </div>
+  <script>
+    function showMessage() {
+  if (confirm("Do you want to save changes?")) {
+  alert("Saved successfully!");
+}
+
+}
+    function outMessage(){
+        if(confirm("Are you sure you want to log out?")){
+            alert("Log out successfully!")
+            window.location.href="Login.html"
+        }
+    }
+  </script>
+</body>
+</html>

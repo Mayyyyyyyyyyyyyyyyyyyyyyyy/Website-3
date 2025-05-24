@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Users</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Admin Panel</h2>
+      <nav>
+      
+        <a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="users.html"><i class="fas fa-user"></i> Users</a>
+        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+        <a href="Pofile.html"><i class="fas fa-id-badge"></i> Profile</a>
+        <a href="Contact.html"><i class="fas fa-phone"></i> Contact Us</a>
+        <a href="#" onclick="outMessage()"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Users</h1>
+      </header>
+
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Ana Cruz</td>
+              <td>ana@example.com</td>
+              <td><button>Edit</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>John Reyes</td>
+              <td>john@example.com</td>
+              <td><button>Edit</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Tom Reyes</td>
+              <td>tom@example.com</td>
+              <td><button>Edit</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer>
+        &copy; 2025 MyWebsite. All rights reserved.
+      </footer>
+      
+    </main>
+  </div>
+  <script>
+    function outMessage(){
+      if(confirm("Are you sure you want to log out?")){
+        alert("Log Out successfull!")
+        window.location.href="Login.html"
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+  
+}
+/*NAVIGATION*/
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(133885897494555370.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      position: fixed;
+      width: 200px;
+      background-color: #2c3e50;
+      color: white;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+    }
+
+    .sidebar nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px 0;
+    }
+
+    .sidebar nav a:hover {
+      background-color: #34495e;
+      padding-left: 10px;
+    }
+
+    .main {
+      flex: 1;
+      padding: 40px;
+      background-color: #f5f5f5;
+      margin-left: 200px;
+    }
+/*End nav*/
+/*Dashborad*/
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background: #222222;
+  background-image: url(133885897494555370.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin-left: 200px;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap; 
+}
+
+.card {
+  flex: 1;
+  background-color: #0077b6;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  min-width: 200px;
+  max-width: 250px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/*End of dashboard*/
+
+/* Table styles */
+table {
+  width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+th, td {
+  padding: 16px;
+  text-align: left;
+}
+th {
+    background-color: #6c8dbf;
+    color: white;
+}
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+button {
+    background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #2980b9;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/*FOOTER*/
+footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
+
+/* dashboard*/
+.Recent {
+  
+    background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.Recent h2 {
+ margin: 0px;
+}
+
+.Recent ul {
+  list-style: none;
+      padding: 0;
+}
+
+.Recent ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #000000;
+  color: #000000;
+  transition: background-color 0.3s;
+}
+
+.Recent ul li:last-child {
+  border-bottom: none;
+}
+
+.Recent ul li:hover {
+  background-color: #dddddd;
+}
+/* PROFILE */
+.main {
+      margin-left: 220px;
+      flex: 1;
+      padding: 40px;
+      background-image: url("133885897494555370.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .profile-form {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px 40px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-form h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #2c3e50;
+    }
+
+    .profile-form label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .profile-form input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .form-buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .form-buttons button {
+      padding: 12px 25px;
+      margin: 5px 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .save-btn {
+      background-color: #7f5af0;
+      color: white;
+    }
+
+    .save-btn:hover {
+      background-color: #6c4dd9;
+    }
+
+    .cancel-btn {
+      background-color: #7f5af0;
+      color: rgb(250, 249, 249);
+    }
+    .cancel-btn{
+      background-color: #6c4dd9;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+      }
+      .main {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }

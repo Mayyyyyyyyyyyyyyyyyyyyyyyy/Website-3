@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<style>
+   form {
+     background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 100px auto;
+  animation: fadeIn 0.5s ease-in-out;
+    
+  }
+  label {
+     display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+  }
+   button {
+  width: 100%;
+  background-color: #7f5af0;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+   button:hover {
+  background-color: #6c4dd9;
+}
+
+  input[type="text"],
+  input[type="email"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  }
+  main-content input:focus {
+  border-color: #7f5af0;
+  outline: none;
+}
+  main-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+</style>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Admin Panel</h2>
+      <nav>
+        <a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="users.html"><i class="fas fa-user"></i> Users</a>
+        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+        <a href="Pofile.html"><i class="fas fa-id-badge"></i> Profile</a>
+        <a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a>
+        <a href="#" onclick="outMessage()"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Settings</h1>
+      </header>
+
+      <section>
+        <form>
+          <label for="site-name">Site Name:</label><br>
+          <input type="text" id="site-name" name="site-name" value="Prototype System"><br><br>
+
+          <label for="email">Admin Email:</label><br>
+          <input type="email" id="email" name="email" value="admin@example.com"><br><br>
+
+          <button onclick="showMessage()">Save</button>
+        </form>
+      </section>
+
+      <footer>
+        &copy; 2025 MyWebsite. All rights reserved.
+      </footer>
+      
+    </main>
+  </div>
+ <script>
+   function showMessage() {
+  if (confirm("Do you want to save changes?")) {
+  alert("Saved successfully!");
+}
+
+}
+function outMessage(){
+  if(confirm("Are you sure you want to logout?")){
+    alert("Log out successfully.")
+window.location.href="Login.html"
+  }
+}
+</script>
+
+  
+</body>
+ 
+</html>

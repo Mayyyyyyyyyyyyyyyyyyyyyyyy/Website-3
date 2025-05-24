@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+      <title>Log In</title>  
+    </head>
+    <style>
+    * {
+      box-sizing: border-box;
+        }
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Tahoma, sans-serif;
+      background-color: #748da7;
+      background-image: url(133885897494555370.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      
+    }
+    form {
+      background-color: #fff;
+      opacity: 0.9;
+      width: 400px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 100;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+    button {
+       display: block;
+       margin: 20px auto 0 auto; 
+       width: 50%;
+       padding: 10px;
+       background-color:  #00adb5;
+       border: none;
+       color: white;
+       font-size: 16px;
+       border-radius: 6px;
+       cursor: pointer; 
+    }
+    button:hover {
+      background-color: #357ab8;
+    }
+     @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    </style>
+    
+        <form action="index.html" method="get">
+          <h1>LOG IN</h1>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+      
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+      
+          <button type="submit">Login</button>
+        </form>
+      </body>
+      </html>
+
+      
